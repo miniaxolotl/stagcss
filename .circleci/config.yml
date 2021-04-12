@@ -5,26 +5,28 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:8.11.1
+      - image: circleci/node:12.18.4
     steps:
       - checkout
       - run:
-          name: update-npm
+          name: update-yarn
           command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{checksum "yarn.lock"}}
       - run:
-          name: install-npm
+          name: install-yarn
           command: yarn install
       - save_cache:
           key: dependency-cache-{{checksum "yarn.lock"}}
           paths:
             - ./node_modules
+      - run:
+          name: build-dist
+          command: yarn build
   test:
     docker:
-      - image: circleci/node:8.11.1
+      - image: circleci/node:12.18.4
     steps:
-      - run:
       - checkout
       - restore_cache:
           key: dependency-cache-{{checksum "yarn.lock"}}
@@ -35,17 +37,6 @@ jobs:
           key: dependency-cache-{{checksum "coverage/lcov.info"}}
           paths:
             - ./coverage
-  coverage:
-    docker:
-      - image: circleci/node:8.11.1
-    steps:
-      - run:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{checksum "coverage/lcov.info"}}
-      -run:
-          name: send-coverage
-          command: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r report -r coverage/lcov.info
 
 workflows:
   version: 2
@@ -54,4 +45,7 @@ workflows:
       - build
   test:
     jobs:
-      - test
+      - build
+      - test:
+          requires:
+            - build
