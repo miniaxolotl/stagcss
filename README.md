@@ -1,12 +1,13 @@
-# stag
 
 <div align="center">
+
+# stag
 
 <img src=".repo/logo.png" alt='Project banner' height='300px'>
 
 **modern and minimalist CSS framework.**
 
-![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag/main?label=main&style=flat-square)
+![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag?style=flat-square)
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag/dev?label=dev&style=flat-square)
 [![GitHub issues](https://img.shields.io/github/issues/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/pulls)
@@ -18,30 +19,55 @@
 
 ### Dependancies
 
-#### 1. TODO
-```sh
-TODO
+- [nodejs](https://nodejs.org/) >= 12.18.4
+- [yarn](https://classic.yarnpkg.com/) >= 1.22.10
+
+### Usage
+
+#### CDN
+```html
+<link rel="stylesheet" href="https://unpkg.com/stagcss"/>
 ```
 
-### Installing
+#### Bower
+```sh
+bower install stagcss
+```
+
+#### npm
+```sh
+npm install --save stagcss
+```
+#### yarn
+```sh
+yarn add stagcss
+```
+
+___
+
+### Theming
 
 #### 1. TODO
 ```sh
-TODO
+# TODO
 ```
 
 ### Building
 
-#### 1. TODO
+#### Using gulp
 ```sh
-TODO
+yarn build
+# or
+gulp build
 ```
 
 ### Testing
 
-#### 1. TODO
+#### Using jest
 ```sh
-TODO
+yarn test
+# or
+jest
 ```
 
 ## Documentation
@@ -50,7 +76,8 @@ Specifications & design documents can be found in the [wiki](/wiki).
 
 ## See Also
 
-- **TODO - TODO**
+- **react-stag - [soon™]()**
+- **react-native-stag - [soon™]()**
 
 ## Contributing
 
