@@ -7,6 +7,7 @@ const config: Config.InitialOptions = {
 	roots: [
 		  'spec/'
 	],
+	collectCoverage: true,
 	coverageReporters: [
 		'json',
 		'text',
