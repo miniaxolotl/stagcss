@@ -1,0 +1,29 @@
+{
+	"name": "stagcss",
+	"version": "0.0.0",
+	"description": "minimalist & modern css framework",
+	"main": "dist/stagcss.min.css",
+	"repository": "git@github.com:songmawa/stagcss.git",
+	"author": "Elias Mawa <elias@emawa.io>",
+	"license": "GPL-3.0",
+	"scripts": {
+		"test": "jest",
+		"build": "gulp build",
+		"watch": "nodemon --watch './**/*' -e scss,sass --exec yarn build"
+	},
+	"dependencies": {
+		"gulp-sass": "^4.1.0",
+		"jest": "^26.6.3",
+		"sass": "^1.32.8"
+	},
+	"devDependencies": {
+		"@types/gulp": "^4.0.8",
+		"@types/jest": "^26.0.22",
+		"@types/sass": "^1.16.0",
+		"gulp": "^4.0.2",
+		"nodemon": "^2.0.7",
+		"ts-jest": "^26.5.4",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.2.4"
+	}
+}
