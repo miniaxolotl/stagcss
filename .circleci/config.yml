@@ -37,16 +37,6 @@ jobs:
           key: dependency-cache-{{checksum "coverage/lcov.info"}}
           paths:
             - ./coverage
-  coverage:
-    docker:
-      - image: circleci/node:12.18.4
-    steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{checksum "coverage/lcov.info"}}
-      - run:
-          name: send-coverage
-          command: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r report -r coverage/lcov.info
 
 workflows:
   version: 2
@@ -56,9 +46,6 @@ workflows:
   test:
     jobs:
       - build
-      - test
-        requires:
-          - build
-      - coverage:
+      - test:
           requires:
-            - test
+            - build
