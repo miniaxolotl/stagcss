@@ -1,0 +1,33 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-background: 		config.$color-white				!default;
+
+/*******************************************************************************
+ * typography
+ *******************************************************************************/
+
+h1 {
+	font-size: config.$font-1;
+}
+
+h2 {
+	font-size: config.$font-2;
+}
+
+h3 {
+	font-size: config.$font-3;
+}
+
+h4 {
+	font-size: config.$font-4;
+}
+
+h5 {
+	font-size: config.$font-5;
+}
+
+h6 {
+	font-size: config.$font-6;
+}

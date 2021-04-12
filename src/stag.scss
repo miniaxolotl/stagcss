@@ -1,0 +1,21 @@
+@use 'config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-background: 		config.$color-white				!default;
+
+/*******************************************************************************
+ * modules
+ *******************************************************************************/
+
+@use 'core/base.scss' with (
+	$color-primary: config.$color-black,
+	$color-secondary: config.$color-grey,
+	$color-background: config.$color-white,
+);
+
+@use 'core/typography.scss' with (
+	$color-primary: config.$color-black,
+	$color-secondary: config.$color-grey,
+	$color-background: config.$color-white,
+);
