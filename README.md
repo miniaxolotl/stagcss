@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src=".repo/logo.png" alt='Project banner' height='300px'>
+
 **modern and minimalist CSS framework.**
 
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag/main?label=main&style=flat-square)
