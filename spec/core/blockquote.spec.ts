@@ -1,6 +1,6 @@
 import { render } from '../lib/render';
 
-const filename = 'grid.scss';
+const filename = 'button.scss';
 
 describe(`src/core/${filename}`, () => {
 	it('compiles to CSS', () => {

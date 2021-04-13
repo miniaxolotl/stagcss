@@ -1,4 +1,3 @@
-import sass from 'sass';
 import glob from 'glob';
 
 import { render } from './lib/render';

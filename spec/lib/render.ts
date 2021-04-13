@@ -1,5 +1,4 @@
 import sass from 'sass';
-import glob from 'glob';
 
 export const render = (filename: string) => {
 	return new Promise<sass.Result>((resolve, reject) => {
