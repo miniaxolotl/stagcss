@@ -2,21 +2,19 @@
 
 $color-primary: 		config.$color-black				!default;
 $color-secondary: 		config.$color-grey				!default;
-$color-background: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent: 			config.$color-magenta			!default;
 
 /*******************************************************************************
  * base
  *******************************************************************************/
-
-* {
-	font-size: config.$font-base;
-	font-family: Cantarell, sans-serif;
-}
-
 html, body {
 	margin: 0;
+	background-color: 	$color-background;
 }
 
-body {
-	background-color: 	$color-background;
+html {
+	font-size: config.$font-base;
+	font-family: config.$font-family;
+	color: $color-primary;
 }

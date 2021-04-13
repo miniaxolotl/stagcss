@@ -3,19 +3,22 @@
 $color-primary: 		config.$color-black				!default;
 $color-secondary: 		config.$color-grey				!default;
 $color-background: 		config.$color-white				!default;
+$color-accent: 			config.$color-magenta			!default;
 
 /*******************************************************************************
  * modules
  *******************************************************************************/
 
 @use 'core/base.scss' with (
-	$color-primary: config.$color-black,
-	$color-secondary: config.$color-grey,
-	$color-background: config.$color-white,
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-background: 	$color-background,
+	$color-accent: 		$color-accent,
 );
 
 @use 'core/typography.scss' with (
-	$color-primary: config.$color-black,
-	$color-secondary: config.$color-grey,
-	$color-background: config.$color-white,
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-background: 	$color-background,
+	$color-accent: 		$color-accent,
 );

@@ -2,11 +2,15 @@
 
 $color-primary: 		config.$color-black				!default;
 $color-secondary: 		config.$color-grey				!default;
-$color-background: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent: 			config.$color-magenta			!default;
 
 /*******************************************************************************
  * typography
  *******************************************************************************/
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 0 config.$margin-base;
+}
 
 h1 {
 	font-size: config.$font-1;
@@ -30,4 +34,17 @@ h5 {
 
 h6 {
 	font-size: config.$font-6;
+}
+
+b, strong {
+	font-weight: 900;
+}
+
+a {
+	color: $color-accent;
+	text-decoration: none;
+
+	&:hover {
+		color: $color-primary;
+	}
 }
