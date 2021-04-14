@@ -1,5 +1,5 @@
 /**
- * stagcss v0.0.0
+ * stagcss v0.3.0
  * https://stagcss.dev
  * https://github.com/songmawa/stagcss
  *
@@ -112,13 +112,13 @@ code {
   margin: 1rem 0 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  background: #eceaea;
+  background: #e7e3e3;
   white-space: nowrap;
 }
 
 pre {
   border-radius: 4px;
-  background: #eceaea;
+  background: #e7e3e3;
 }
 pre > code {
   display: block;
@@ -153,7 +153,9 @@ input[type=number], input[type=tel], select, textarea {
   padding: 0.5rem 1rem;
   border: 1px solid #3a3939;
   border-radius: 4px;
+  color: #3a3939;
   font-size: 0.75rem;
+  background: #e7e3e3;
   width: 100%;
 }
 input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, input[type=password]:focus, input[type=email]:hover, input[type=email]:focus,
@@ -273,7 +275,7 @@ table, tr, thead, tbody {
 }
 table > tr, tr > tr, thead > tr, tbody > tr {
   margin: 0 0 1rem;
-  border-bottom: 1px solid #eceaea;
+  border-bottom: 1px solid #3a3939;
 }
 
 th, td {
