@@ -1,6 +1,6 @@
 {
 	"name": "stagcss",
-	"version": "0.0.0",
+	"version": "0.3.0",
 	"description": "minimalist & modern css framework",
 	"main": "dist/stagcss.min.css",
 	"repository": "git@github.com:songmawa/stagcss.git",
