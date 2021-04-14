@@ -3,7 +3,7 @@
 
 # stag
 
-<img src=".repo/logo.png" alt='Project banner' height='300px'>
+<img src=".repo/logo.png" alt='Project banner' maxWidth='300px'>
 
 **modern and minimalist CSS framework.**
 
