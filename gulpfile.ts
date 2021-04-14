@@ -17,7 +17,7 @@ const fileComment = `/**
 `;
 
 interface Args {
-	theme?: 'dark' | 'default' | true;
+	theme?: 'dark' | 'default' | 'all' | true;
 	minify?: boolean;
 };
 
@@ -89,15 +89,21 @@ const comment = (options: CommentOptions = {}) => {
  *******************************************************************************/
 
 gulp.task('build', () => {
-	console.log(args);
-	
-	const filepath = ((name) => {
-		if (args.theme === 'dark') {
-			return `src/${name}-dark.scss`;
-		} else {
-			return `src/${name}.scss`;
-		}
-	})('stag');
+	let filepath: string = '';
+
+	if(!args.theme || args.theme === 'all') {
+		filepath = 'src/stag*.scss';
+	} else {
+		filepath = ((name) => {
+			if (args.theme === 'dark') {
+				return `src/${name}-dark.scss`;
+			} else if(args.theme === 'default') {
+				return `src/${name}.scss`;
+			} else {
+				return filepath = 'src/stag*.scss';
+			}
+		})('stag');
+	}
 
 	return gulp.src(filepath)
 	.pipe(sassify({ minify: args.minify}))

@@ -22,7 +22,30 @@ jobs:
             - ./node_modules
       - run:
           name: build-dist
-          command: yarn build
+          command: yarn build --theme all
+      - run:
+          name: build-dist-minfied
+          command: yarn build --theme all --minified
+  build-minfied:
+    docker:
+      - image: circleci/node:12.18.4
+    steps:
+      - checkout
+      - run:
+          name: update-yarn
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{checksum "yarn.lock"}}
+      - run:
+          name: install-yarn
+          command: yarn install
+      - save_cache:
+          key: dependency-cache-{{checksum "yarn.lock"}}
+          paths:
+            - ./node_modules
+      - run:
+          name: build-dist-minfied
+          command: yarn build --theme all --minified
   test:
     docker:
       - image: circleci/node:12.18.4
@@ -43,6 +66,8 @@ workflows:
   build-and-test:
     jobs:
       - build
+      - build-minified
       - test:
           requires:
             - build
+            - build-minified
