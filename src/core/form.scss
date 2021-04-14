@@ -1,0 +1,49 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * form
+ *******************************************************************************/
+input[type='text'], input[type='password'], input[type='email'],
+input[type='search'], input[type='url'], input[type='file'],
+input[type='number'], input[type='tel'], select, textarea {
+	margin: 0 0 config.$margin-base;
+	padding: config.$padding-base config.$padding-lg;
+
+	border: config.$border-sm solid $color-primary;
+	border-radius: config.$border-round;
+
+	font-size: config.$font-small;
+
+	width: 100%;
+
+	&:hover, &:focus {
+		border-color: $color-accent-1;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+textarea {
+	padding: config.$padding-lg;
+	min-height: 4rem;
+}
+
+fieldset {
+	margin: 0 0 config.$margin-base;
+	border-width: 0;
+	padding: 0;
+}
+
+label, legend {
+	font-size: config.$font-small;
+	font-weight: 600;
+}

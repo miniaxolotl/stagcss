@@ -29,6 +29,15 @@ $color-accent-2: 		config.$color-magenta			!default;
 	$color-accent-2: 	$color-accent-2,
 );
 
+@use 'core/box.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
 @use 'core/button.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
@@ -48,6 +57,15 @@ $color-accent-2: 		config.$color-magenta			!default;
 );
 
 @use 'core/divider.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/form.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
 	$color-tertiary: 	$color-tertiary,
