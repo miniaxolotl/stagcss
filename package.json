@@ -1,8 +1,11 @@
 {
 	"name": "stagcss",
-	"version": "0.3.0",
+	"version": "0.3.2",
 	"description": "minimalist & modern css framework",
 	"main": "dist/stag.min.css",
+	"files": [
+		"dist/*.css"
+	],
 	"repository": "git@github.com:songmawa/stag.git",
 	"author": "Elias Mawa <elias@emawa.io>",
 	"license": "GPL-3.0",

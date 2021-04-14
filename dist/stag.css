@@ -112,13 +112,13 @@ code {
   margin: 1rem 0 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  background: #e7e3e3;
+  background: #f4f4f4;
   white-space: nowrap;
 }
 
 pre {
   border-radius: 4px;
-  background: #e7e3e3;
+  background: #f4f4f4;
 }
 pre > code {
   display: block;
@@ -151,11 +151,13 @@ input[type=search], input[type=url], input[type=file],
 input[type=number], input[type=tel], select, textarea {
   margin: 0 0 1rem;
   padding: 0.5rem 1rem;
+  box-sizing: border-box;
   border: 1px solid #3a3939;
   border-radius: 4px;
   color: #3a3939;
   font-size: 0.75rem;
-  background: #e7e3e3;
+  background: #f4f4f4;
+  min-width: 100%;
   width: 100%;
 }
 input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, input[type=password]:focus, input[type=email]:hover, input[type=email]:focus,
@@ -165,10 +167,30 @@ input[type=number]:hover,
 input[type=number]:focus, input[type=tel]:hover, input[type=tel]:focus, select:hover, select:focus, textarea:hover, textarea:focus {
   border-color: #8a7400;
 }
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus,
-input[type=search]:focus, input[type=url]:focus, input[type=file]:focus,
-input[type=number]:focus, input[type=tel]:focus, select:focus, textarea:focus {
-  outline: none;
+input[type=text][disabled], input[type=password][disabled], input[type=email][disabled],
+input[type=search][disabled], input[type=url][disabled], input[type=file][disabled],
+input[type=number][disabled], input[type=tel][disabled], select[disabled], textarea[disabled] {
+  opacity: 0.4;
+}
+input[type=text][disabled]:focus, input[type=text][disabled]:hover, input[type=password][disabled]:focus, input[type=password][disabled]:hover, input[type=email][disabled]:focus, input[type=email][disabled]:hover,
+input[type=search][disabled]:focus,
+input[type=search][disabled]:hover, input[type=url][disabled]:focus, input[type=url][disabled]:hover, input[type=file][disabled]:focus, input[type=file][disabled]:hover,
+input[type=number][disabled]:focus,
+input[type=number][disabled]:hover, input[type=tel][disabled]:focus, input[type=tel][disabled]:hover, select[disabled]:focus, select[disabled]:hover, textarea[disabled]:focus, textarea[disabled]:hover {
+  cursor: not-allowed;
+  border-color: #3a3939;
+}
+
+input[type=radio], input[type=checkbox] {
+  cursor: pointer;
+  display: inline-block;
+}
+input[type=radio][disabled], input[type=checkbox][disabled] {
+  opacity: 0.4;
+}
+input[type=radio][disabled]:focus, input[type=radio][disabled]:hover, input[type=checkbox][disabled]:focus, input[type=checkbox][disabled]:hover {
+  cursor: not-allowed;
+  border-color: #3a3939;
 }
 
 textarea {
@@ -180,6 +202,14 @@ fieldset {
   margin: 0 0 1rem;
   border-width: 0;
   padding: 0;
+  width: 100%;
+}
+fieldset[disabled] > input[type=radio], fieldset[disabled] > input[type=checkbox] {
+  opacity: 0.4;
+}
+fieldset[disabled] > input[type=radio]:focus, fieldset[disabled] > input[type=radio]:hover, fieldset[disabled] > input[type=checkbox]:focus, fieldset[disabled] > input[type=checkbox]:hover {
+  cursor: not-allowed;
+  border-color: #3a3939;
 }
 
 label, legend {
@@ -265,6 +295,29 @@ a:hover {
 }
 
 /*******************************************************************************
+ * list
+ *******************************************************************************/
+dl, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+dl > dt {
+  font-weight: 600;
+}
+dl > dd {
+  margin: o 1rem 0 0;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+/*******************************************************************************
  * table
  *******************************************************************************/
 table, tr, thead, tbody {
@@ -279,7 +332,7 @@ table > tr, tr > tr, thead > tr, tbody > tr {
 }
 
 th, td {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 th:first-child, td:first-child {
   padding-left: 0;
