@@ -23,7 +23,7 @@ table, tr, thead, tbody {
 }
 
 th, td {
-	padding: 0 config.$padding-base;
+	padding: 0 config.$padding-lg;
   
 	&:first-child {
 		padding-left: 0;
