@@ -1,0 +1,64 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * util
+ *******************************************************************************/
+/** flexbox **/
+.flex {
+	display: flex;
+}
+
+.direction-vertical {
+	flex-direction: column;
+}
+
+.direction-horizontal {
+	flex-direction: row;
+}
+
+.center {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ /** position **/
+ .position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+.position-fixed {
+	position: fixed;
+}
+
+/** size **/
+.full-height {
+	min-height: 100vh;
+}
+
+.full-width {
+	width: 100%;
+
+}
+
+.size-full {
+	width: 100%;
+	min-height: 100vh;
+}
+
+/** visiblity **/
+.hidden {
+	visibility: hidden;
+	display: none;
+}

@@ -8,7 +8,7 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * modules
+ * core
  *******************************************************************************/
 
 @use 'core/base.scss' with (
@@ -111,6 +111,15 @@ $color-accent-2: 		config.$color-magenta			!default;
 );
 
 @use 'core/typography.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/util.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
 	$color-tertiary: 	$color-tertiary,
