@@ -1,9 +1,11 @@
 @use 'config.scss';
 
 $color-primary: 		config.$color-black				!default;
-$color-secondary: 		config.$color-grey				!default;
+$color-secondary: 		config.$color-grey-light		!default;
+$color-tertiary: 		config.$color-white				!default;
 $color-background: 		config.$color-white				!default;
-$color-accent: 			config.$color-magenta			!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
  * modules
@@ -12,13 +14,71 @@ $color-accent: 			config.$color-magenta			!default;
 @use 'core/base.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
 	$color-background: 	$color-background,
-	$color-accent: 		$color-accent,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/blockquote.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/button.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/code.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/divider.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/grid.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/link.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
 );
 
 @use 'core/typography.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
 	$color-background: 	$color-background,
-	$color-accent: 		$color-accent,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
 );

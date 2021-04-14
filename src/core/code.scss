@@ -8,15 +8,28 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * base
+ * code
  *******************************************************************************/
-html, body {
-	margin: 0;
-	background-color: 	$color-background;
+
+code {
+	margin: config.$margin-base 0 config.$margin-base;
+	padding: config.$padding-sm config.$padding-base;
+	
+	border-radius: config.$border-round;
+	background: $color-secondary;
+	white-space: nowrap;
 }
 
-html {
-	font-size: config.$font-base;
-	font-family: config.$font-family;
-	color: $color-primary;
+pre {
+	border-radius: config.$border-round;
+	background: config.$color-grey-light;
+
+	&>code {
+		display: block;
+		margin: 0;
+		padding: config.$padding-base;
+		
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
 }

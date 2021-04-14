@@ -28,24 +28,27 @@ $font-small-6: 1.125;
  *******************************************************************************/
 $color-black: 			#3a3939;
 $color-white: 			#fafafa;
+
 $color-grey: 			#d6d6d6;
+$color-grey-light: 		#eceaea;
 
 $color-gold: 			#ffda14;
 $color-gold-light: 		#ece8c5;
-$color-gold-dark: 		#b19500;
+$color-gold-dark: 		#8a7400;
 
 $color-magenta: 		#ff00ff;
 $color-magenta-light: 	#ff99ff;
 $color-magenta-dark: 	#a100a1;
 
-$color-transparent: 	#00000000;
+$color-transparent: 	#0000;
 
 /*******************************************************************************
  * border
  *******************************************************************************/
 $border-sharp: 0px;
 $border-round: 4px;
-$border-width: 2px;
+$border-sm: 1px;
+$border-lg: 4px;
 
 @function border($color) {
 	@return (
@@ -58,6 +61,10 @@ $border-width: 2px;
  * spacing
  *******************************************************************************/
 $margin-base: 1rem;
+
+$padding-base: 4px;
+$padding-sm: 2px;
+$padding-lg: 1rem;
 
 /*******************************************************************************
  * transitions
