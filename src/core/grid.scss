@@ -1,0 +1,56 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * grid
+ *******************************************************************************/
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+
+	width: 80%;
+}
+
+.section, section {
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0 0 config.$padding-lg;
+
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	margin: 0 0 config.$margin-base;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+
+	&>.column {
+		flex-grow: 1;
+		flex-basis: 0;
+
+		margin: 0 0.5%;
+		min-width: 24%;
+	}
+
+	@for $i from 1 through 4 {
+		.column-#{$i*25} {
+			flex: 0 0 #{($i*25%)-1%};
+			max-width: #{($i*25%)-1%};
+		}
+	}
+
+	@for $i from 1 through 4 {
+		.column-offset-#{$i*25} {
+			margin-left: #{($i*25%)-1%};
+		}
+	}
+}

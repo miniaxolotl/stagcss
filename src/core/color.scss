@@ -1,0 +1,101 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * color
+ *******************************************************************************/
+/** color */
+ .color-black {
+	color: config.$color-black;
+}
+
+.color-white {
+	color: config.$color-white;
+}
+
+.color-grey {
+	color: config.$color-grey;
+}
+
+.color-grey-light {
+	color: config.$color-grey-light;
+}
+
+.color-gold {
+	color: config.$color-gold;
+}
+
+.color-grey-light {
+	color: config.$color-gold-light;
+}
+
+.color-grey-light {
+	color: config.$color-gold-dark;
+}
+
+.color-magenta {
+	color: config.$color-gold;
+}
+
+.color-magenta-light {
+	color: config.$color-gold-light;
+}
+
+.color-magenta-light {
+	color: config.$color-gold-dark;
+}
+
+.color-magenta-light {
+	color: config.$color-transparent;
+}
+
+/** background */
+.background-black {
+	background-color: config.$color-black;
+}
+
+.background-white {
+	background-color: config.$color-white;
+}
+
+.background-grey {
+	background-color: config.$color-grey;
+}
+
+.background-grey-light {
+	background-color: config.$color-grey-light;
+}
+
+.background-gold {
+	background-color: config.$color-gold;
+}
+
+.background-grey-light {
+	background-color: config.$color-gold-light;
+}
+
+.background-grey-light {
+	background-color: config.$color-gold-dark;
+}
+
+.background-magenta {
+	background-color: config.$color-gold;
+}
+
+.background-magenta-light {
+	background-color: config.$color-gold-light;
+}
+
+.background-magenta-light {
+	background-color: config.$color-gold-dark;
+}
+
+.background-magenta-light {
+	background-color: config.$color-transparent;
+}

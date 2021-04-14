@@ -1,10 +1,10 @@
 @use 'config.scss';
 
-$color-primary: 		config.$color-black				!default;
-$color-secondary: 		config.$color-grey-light		!default;
-$color-tertiary: 		config.$color-white				!default;
-$color-background: 		config.$color-white				!default;
-$color-accent-1: 		config.$color-gold-dark			!default;
+$color-primary: 		config.$color-white				!default;
+$color-secondary: 		config.$color-grey-dark			!default;
+$color-tertiary: 		config.$color-black				!default;
+$color-background: 		config.$color-black				!default;
+$color-accent-1: 		config.$color-gold				!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************

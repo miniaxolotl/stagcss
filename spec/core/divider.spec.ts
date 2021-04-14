@@ -1,6 +1,6 @@
 import { render } from '../lib/render';
 
-const filename = 'blockquote.scss';
+const filename = 'divider.scss';
 
 describe(`src/core/${filename}`, () => {
 	it('compiles to CSS', () => {

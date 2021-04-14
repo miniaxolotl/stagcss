@@ -1,0 +1,60 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * button
+ *******************************************************************************/
+button, .button, input[type='button'], input[type='submit'] {
+	margin: config.$margin-base 0 config.$margin-base;
+	padding: config.$padding-base config.$padding-lg;
+	border: config.$border-sm solid $color-primary;
+	border-radius: config.$border-round;
+
+	cursor: pointer;
+	display: inline-block;
+
+	background-color: $color-primary;
+	color: $color-tertiary;
+	font-weight: 600;
+
+	&:focus, &:hover {
+		opacity: 0.8;
+		border-color: $color-accent-1;
+		background-color: $color-accent-1;
+		transition: config.$transition-short;
+	}
+
+	&.button-outline {
+		background-color: config.$color-transparent;
+		color: $color-primary;
+
+		&:focus, &:hover {
+			color: $color-accent-1;
+		}
+	}
+
+	&.button-clear {
+		border: none;
+		background-color: config.$color-transparent;
+		color: $color-primary;
+
+		&:focus, &:hover {
+			color: $color-accent-1;
+		}
+	}
+
+    &[disabled] {
+		opacity: 0.8;
+		&:focus, &:hover {
+			cursor: not-allowed;
+			border-color: $color-primary;
+			background-color: $color-primary;
+		}
+	}
+}

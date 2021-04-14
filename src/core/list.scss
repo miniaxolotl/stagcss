@@ -8,15 +8,28 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * base
+ * list
  *******************************************************************************/
-html, body {
+dl, ol, ul {
 	margin: 0;
-	background-color: 	$color-background;
+	padding: 0;
 }
 
-html {
-	font-size: config.$font-base;
-	font-family: config.$font-family;
-	color: $color-primary;
+dl {
+	&>dt {
+		font-weight: 600;
+	}
+
+	&>dd {
+		margin: o config.$margin-base 0 0;
+	}
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+ul {
+
+	list-style: circle inside;
 }

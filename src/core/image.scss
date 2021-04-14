@@ -8,15 +8,8 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * base
+ * image
  *******************************************************************************/
-html, body {
-	margin: 0;
-	background-color: 	$color-background;
-}
-
-html {
-	font-size: config.$font-base;
-	font-family: config.$font-family;
-	color: $color-primary;
+img {
+	max-width: 100%;
 }

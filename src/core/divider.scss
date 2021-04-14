@@ -8,15 +8,18 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * base
+ * divider
  *******************************************************************************/
-html, body {
-	margin: 0;
-	background-color: 	$color-background;
+hr {
+	border: config.$border-sm solid $color-primary;
+	margin: config.$margin-base auto;
+
+	width: 60%;
 }
 
-html {
-	font-size: config.$font-base;
-	font-family: config.$font-family;
-	color: $color-primary;
+.hr-large {
+	border: config.$border-sm solid $color-primary;
+	margin: config.$margin-base auto;
+
+	width: 80%;
 }

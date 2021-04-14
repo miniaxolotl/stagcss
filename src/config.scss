@@ -16,36 +16,42 @@ $font-4: 1.75rem;
 $font-5: 1.50rem;
 $font-6: 1.25rem;
 
-$font-small-1: 1.625;
-$font-small-2: 1.500;
-$font-small-3: 1.500;
-$font-small-4: 1.375;
-$font-small-5: 1.250;
-$font-small-6: 1.125;
+$font-small-1: 1.625rem;
+$font-small-2: 1.500rem;
+$font-small-3: 1.500rem;
+$font-small-4: 1.375rem;
+$font-small-5: 1.250rem;
+$font-small-6: 1.125rem;
+
+$font-small: 0.75rem;
 
 /*******************************************************************************
  * color
  *******************************************************************************/
 $color-black: 			#3a3939;
 $color-white: 			#fafafa;
-$color-grey: 			#d6d6d6;
+
+$color-grey: 			#b8b3b3;
+$color-grey-light: 		#e7e3e3;
+$color-grey-dark: 		#616161;
 
 $color-gold: 			#ffda14;
 $color-gold-light: 		#ece8c5;
-$color-gold-dark: 		#b19500;
+$color-gold-dark: 		#8a7400;
 
 $color-magenta: 		#ff00ff;
 $color-magenta-light: 	#ff99ff;
 $color-magenta-dark: 	#a100a1;
 
-$color-transparent: 	#00000000;
+$color-transparent: 	#0000;
 
 /*******************************************************************************
  * border
  *******************************************************************************/
 $border-sharp: 0px;
 $border-round: 4px;
-$border-width: 2px;
+$border-sm: 1px;
+$border-lg: 4px;
 
 @function border($color) {
 	@return (
@@ -58,6 +64,10 @@ $border-width: 2px;
  * spacing
  *******************************************************************************/
 $margin-base: 1rem;
+
+$padding-base: 0.5rem;
+$padding-sm: 0.25rem;
+$padding-lg: 1rem;
 
 /*******************************************************************************
  * transitions
