@@ -15,6 +15,30 @@ $color-accent-2: 		config.$color-magenta			!default;
 	display: flex;
 }
 
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.align-start {
+	align-content: flex-start;
+}
+
+.align-center {
+	align-content: center;
+}
+
+.align-end {
+	align-content: flex-end;
+}
+
 .direction-vertical {
 	flex-direction: column;
 }
@@ -61,4 +85,13 @@ $color-accent-2: 		config.$color-magenta			!default;
 .hidden {
 	visibility: hidden;
 	display: none;
+}
+
+/** float **/
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
 }
