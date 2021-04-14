@@ -15,6 +15,7 @@ input[type='search'], input[type='url'], input[type='file'],
 input[type='number'], input[type='tel'], select, textarea {
 	margin: 0 0 config.$margin-base;
 	padding: config.$padding-base config.$padding-lg;
+	box-sizing: border-box;
 
 	border: config.$border-sm solid $color-primary;
 	border-radius: config.$border-round;
@@ -23,14 +24,34 @@ input[type='number'], input[type='tel'], select, textarea {
 	font-size: config.$font-small;
 	background: $color-secondary;
 
+	min-width: 100%;
 	width: 100%;
 
 	&:hover, &:focus {
 		border-color: $color-accent-1;
 	}
 
-	&:focus {
-		outline: none;
+    &[disabled] {
+		opacity: 0.4;
+
+		&:focus, &:hover {
+			cursor: not-allowed;
+			border-color: $color-primary;
+		}
+	}
+}
+
+input[type='radio'], input[type='checkbox'] {
+	cursor: pointer;
+	display: inline-block;
+
+    &[disabled] {
+		opacity: 0.4;
+
+		&:focus, &:hover {
+			cursor: not-allowed;
+			border-color: $color-primary;
+		}
 	}
 }
 
@@ -43,6 +64,19 @@ fieldset {
 	margin: 0 0 config.$margin-base;
 	border-width: 0;
 	padding: 0;
+
+	width: 100%;
+
+	&[disabled] {
+		&>input[type='radio'], &>input[type='checkbox'] {
+			opacity: 0.4;
+
+			&:focus, &:hover {
+				cursor: not-allowed;
+				border-color: $color-primary;
+			}
+		}
+	}
 }
 
 label, legend {
