@@ -3,9 +3,9 @@
 
 # stag
 
-<img src=".repo/logo.png" alt='Project banner' maxWidth='300px'>
+<img src=".repo/logo.png" alt='Project banner' width='300px'>
 
-**modern and minimalist CSS framework.**
+**a modern and minimalist CSS framework.**
 
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag?style=flat-square)
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag/dev?label=dev&style=flat-square)
@@ -29,11 +29,6 @@
 <link rel="stylesheet" href="https://unpkg.com/stagcss"/>
 ```
 
-#### Bower
-```sh
-bower install stagcss
-```
-
 #### npm
 ```sh
 npm install --save stagcss
@@ -53,6 +48,8 @@ ___
 ```
 
 ### Building
+
+Specify theme by using or ommiting `--theme` (`default` and `dark`). Minify using `--minify`.
 
 #### Using gulp
 ```sh
