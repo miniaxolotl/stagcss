@@ -8,27 +8,28 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * code
+ * list
  *******************************************************************************/
-code {
-	margin: config.$margin-base 0 config.$margin-base;
-	padding: config.$padding-sm config.$padding-base;
-	
-	border-radius: config.$border-round;
-	background: $color-secondary;
-	white-space: nowrap;
+dl, ol, ul {
+	margin: 0;
+	padding: 0;
 }
 
-pre {
-	border-radius: config.$border-round;
-	background: config.$color-grey-light;
-
-	&>code {
-		display: block;
-		margin: 0;
-		padding: config.$padding-base;
-		
-		white-space: pre-wrap;
-		word-wrap: break-word;
+dl {
+	&>dt {
+		font-weight: 600;
 	}
+
+	&>dd {
+		margin: o config.$margin-base 0 0;
+	}
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+ul {
+
+	list-style: circle inside;
 }

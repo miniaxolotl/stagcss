@@ -83,7 +83,25 @@ $color-accent-2: 		config.$color-magenta			!default;
 	$color-accent-2: 	$color-accent-2,
 );
 
+@use 'core/image.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
 @use 'core/link.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'core/table.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
 	$color-tertiary: 	$color-tertiary,
