@@ -7,6 +7,9 @@ const config: Config.InitialOptions = {
 	roots: [
 		  'spec/'
 	],
+    "testPathIgnorePatterns" : [
+      "ignore/" 
+    ],
 	collectCoverage: true,
 	coverageReporters: [
 		'json',

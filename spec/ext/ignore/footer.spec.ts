@@ -1,6 +1,6 @@
-import { render } from '../lib/render';
+import { render } from '../../lib/render';
 
-const filename = 'nav.scss';
+const filename = 'progress.scss';
 
 describe(`src/ext/${filename}`, () => {
 	it('compiles to CSS', () => {

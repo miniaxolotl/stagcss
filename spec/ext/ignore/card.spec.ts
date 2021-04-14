@@ -1,6 +1,6 @@
-import { render } from '../lib/render';
+import { render } from '../../lib/render';
 
-const filename = 'progress.scss';
+const filename = 'card.scss';
 
 describe(`src/ext/${filename}`, () => {
 	it('compiles to CSS', () => {
