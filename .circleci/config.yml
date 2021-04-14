@@ -23,10 +23,7 @@ jobs:
       - run:
           name: build-dist
           command: yarn build --theme all
-      - run:
-          name: build-dist-minfied
-          command: yarn build --theme all --minified
-  build-minfied:
+  build-minified:
     docker:
       - image: circleci/node:12.18.4
     steps:
