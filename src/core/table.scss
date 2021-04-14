@@ -18,7 +18,7 @@ table, tr, thead, tbody {
 
 	&>tr {
 		margin: 0 0 config.$margin-base;
-		border-bottom: config.$border-sm solid $color-secondary;
+		border-bottom: config.$border-sm solid $color-primary;
 	}
 }
 

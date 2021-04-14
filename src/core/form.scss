@@ -19,7 +19,9 @@ input[type='number'], input[type='tel'], select, textarea {
 	border: config.$border-sm solid $color-primary;
 	border-radius: config.$border-round;
 
+	color: $color-primary;
 	font-size: config.$font-small;
+	background: $color-secondary;
 
 	width: 100%;
 

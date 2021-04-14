@@ -1,6 +1,6 @@
 import { render } from '../lib/render';
 
-const filename = 'progress.scss';
+const filename = 'footer.scss';
 
 describe(`src/ext/${filename}`, () => {
 	it('compiles to CSS', () => {
