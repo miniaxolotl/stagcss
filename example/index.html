@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>stagcss</title>
 		<link rel="stylesheet" href="dist/stag.css">
 	</head>	
 <body class="container">
@@ -35,7 +37,7 @@
 		<h2> Blockquote </h2>
 		<blockquote>
 			<p>
-				Hello World!
+				Garreg Mach Monastery
 			</p>
 		</blockquote>
 	</section>
@@ -54,7 +56,9 @@
 			Box
 		</p>
 		<div class="box">
-			A simple box...
+			<p>
+				A simple box...
+			</p>
 		</div>
 	</section>
 	<section>
@@ -79,40 +83,51 @@
 		</p>
 		<form>
 			<label for="text">text</label>
-			<input type="text" name="text"/>
+			<input id="text" type="text" name="text"/>
 
 			<label for="password">password</label>
-			<input type="password" name="password"/>
+			<input id="password" type="password" name="password"/>
 			
-			<fieldset>
-				<label for="checkbox">checkbox</label>
-				<input type="checkbox" name="checkbox"/>
+			<div class="box">
+				<fieldset>
+					<label for="checkbox-1">checkbox</label>
+					<input id="checkbox-1" type="checkbox" name="checkbox"/>
+	
+					<label for="checkbox-2">checkbox</label>
+					<input id="checkbox-2" type="checkbox" name="checkbox"/>
+	
+					<label for="checkbox-3">checkbox</label>
+					<input id="checkbox-3" type="checkbox" name="checkbox" disabled/>
+				</fieldset>
 
-				<label for="checkbox">checkbox</label>
-				<input type="checkbox" name="checkbox"/>
-			</fieldset>
+				<fieldset>
+					<label for="radio-1">radio</label>
+					<input id="radio-1" type="radio" name="radio-2"/>
+	
+					<label for="radio-2">radio</label>
+					<input id="radio-2" type="radio" name="radio-2"/>
+	
+					<label for="radio-3">radio</label>
+					<input id="radio-3" type="radio" name="radio-2" disabled/>
+				</fieldset>
+			</div>
 
-			<fieldset>
-				<label for="radio-1">radio</label>
-				<input type="radio" name="radio-1"/>
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+			
+			<label for="textarea">Number</label>
+			<textarea id="textarea" disabled></textarea>
 
-				<label for="radio-2">radio</label>
-				<input type="radio" name="radio-1"/>
-			</fieldset>
-
-			<fieldset>
-				<label for="radio-1">radio</label>
-				<input type="radio" name="radio-2"/>
-
-				<label for="radio-2">radio</label>
-				<input type="radio" name="radio-2"/>
-			</fieldset>
-
-			<textarea></textarea>
-
-			<input type="number"/>
-			<input type="tel"/>
-			<input type="url"/>
+			<label for="number">Number</label>
+			<input id="number" type="number" disabled/>
+			<label for="tel">Tel</label>
+			<input id="tel" type="tel"/>
+			<label for="url">Url</label>
+			<input id="url" type="url"/>
 		</form>
 	</section>
 	<section>
@@ -135,36 +150,36 @@
 	</section>
 	<section>
 		<h2> List </h2>
-		<h6> Ordered list </h6>
+		<h3> Ordered list </h3>
 		<div>
 			<ol>
 				<li>
-					hello
+					Claude
 				</li>
 				<li>
-					world
+					Lysithea
 				</li>
 			</ol>
 		</div>
-		<h6> Unordered list </h6>
+		<h3> Unordered list </h3>
 		<div>
 			<ul>
 				<li>
-					hello
+					Claude
 				</li>
 				<li>
-					world
+					Lysithea
 				</li>
 			</ul>
 		</div>
-		<h6> Description list </h6>
+		<h3> Description list </h3>
 		<div>
 			<dl>
 				<dt>
-					hello
+					Claude
 				</dt>
 				<dd>
-					world
+					Lysithea
 				</dd>
 			</dl>
 		</div>
@@ -175,14 +190,27 @@
 			<table>
 				<thead>
 					<tr>
-						<th>hello</th>
-						<th>there's</th>
+						<th>Name</th>
+						<th>Race</th>
+						<th>Gender</th>
+						<th>Affiliation</th>
+						<th>Starting Classes</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>world</td>
-						<td>darling</td>
+						<td>Claude</td>
+						<td>Human</td>
+						<td>Male</td>
+						<td>Golden Deer</td>
+						<td>Noble, Wyvern Rider</td>
+					</tr>
+					<tr>
+						<td>Lysithea</td>
+						<td>Human</td>
+						<td>Female</td>
+						<td>Golden Deer</td>
+						<td>Noble, Mage</td>
 					</tr>
 				</tbody>
 			</table>
