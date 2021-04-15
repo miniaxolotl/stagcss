@@ -10,6 +10,7 @@
 	"author": "Elias Mawa <elias@emawa.io>",
 	"license": "GPL-3.0",
 	"scripts": {
+		"serve": "browser-sync start --server --files \"dist/*\", \"example/*\" --ss example/",
 		"test": "jest",
 		"build": "gulp build",
 		"watch": "nodemon --watch './**/*' -e scss,sass --exec yarn build"
@@ -22,6 +23,7 @@
 		"@types/gulp": "^4.0.8",
 		"@types/jest": "^26.0.22",
 		"@types/sass": "^1.16.0",
+		"browser-sync": "^2.26.14",
 		"gulp": "^4.0.2",
 		"nodemon": "^2.0.7",
 		"ts-jest": "^26.5.4",

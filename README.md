@@ -8,9 +8,8 @@
 **a modern and minimalist CSS framework.**
 
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag?style=flat-square)
-![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag/dev?label=dev&style=flat-square)
+![npm](https://img.shields.io/npm/v/stagcss?style=flat-square)
 [![GitHub issues](https://img.shields.io/github/issues/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/pulls)
 [![GitHub license](https://img.shields.io/github/license/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/blob/master/LICENSE)
 
 </div>

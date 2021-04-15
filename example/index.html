@@ -90,13 +90,19 @@
 
 				<label for="checkbox">checkbox</label>
 				<input type="checkbox" name="checkbox"/>
+
+				<label for="checkbox">checkbox</label>
+				<input type="checkbox" name="checkbox" disabled/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset disabled>
 				<label for="radio-1">radio</label>
 				<input type="radio" name="radio-1"/>
 
-				<label for="radio-2">radio</label>
+				<label for="radio-1">radio</label>
+				<input type="radio" name="radio-1"/>
+
+				<label for="radio-1">radio</label>
 				<input type="radio" name="radio-1"/>
 			</fieldset>
 
@@ -104,13 +110,20 @@
 				<label for="radio-1">radio</label>
 				<input type="radio" name="radio-2"/>
 
-				<label for="radio-2">radio</label>
+				<label for="radio-1">radio</label>
 				<input type="radio" name="radio-2"/>
 			</fieldset>
 
-			<textarea></textarea>
+			<label for="country">Country</label>
+			<select name="country">
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+			
+			<textarea disabled></textarea>
 
-			<input type="number"/>
+			<input type="number" disabled/>
 			<input type="tel"/>
 			<input type="url"/>
 		</form>
@@ -175,14 +188,27 @@
 			<table>
 				<thead>
 					<tr>
-						<th>hello</th>
-						<th>there's</th>
+						<th>Name</th>
+						<th>Race</th>
+						<th>Gender</th>
+						<th>Affiliation</th>
+						<th>Starting Classes</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>world</td>
-						<td>darling</td>
+						<td>Claude</td>
+						<td>Human</td>
+						<td>Male</td>
+						<td>Golden Deer</td>
+						<td>Noble, Wyvern Rider</td>
+					</tr>
+					<tr>
+						<td>Lysithea</td>
+						<td>Human</td>
+						<td>Female</td>
+						<td>Golden Deer</td>
+						<td>Noble, Mage</td>
 					</tr>
 				</tbody>
 			</table>
