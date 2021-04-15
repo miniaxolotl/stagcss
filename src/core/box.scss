@@ -11,6 +11,17 @@ $color-accent-2: 		config.$color-magenta			!default;
  * box
  *******************************************************************************/
 .box {
-	margin: 0 0 config.$margin-base;
-	padding: config.$margin-base config.$margin-base 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin: config.$margin-base;
+
+	&>* {
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
 }
