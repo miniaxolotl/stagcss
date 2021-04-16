@@ -7,6 +7,9 @@
  * Licensed under the GPL-3.0 license
  */
 /*******************************************************************************
+ * media breakpoints
+ *******************************************************************************/
+/*******************************************************************************
  * fonts
  *******************************************************************************/
 /*******************************************************************************
@@ -236,17 +239,27 @@ label, legend {
   margin: 0 auto;
   width: 40%;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
 
 .section, section {
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0 0 1rem;
+  margin: 0 0 1rem;
+  padding: 0;
   width: 100%;
 }
 
 .row {
   display: flex;
-  margin: 0 0 1rem;
+  margin: 0;
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
@@ -254,36 +267,86 @@ label, legend {
 .row > .column {
   flex-grow: 1;
   flex-basis: 0;
-  margin: 0 0.5%;
+  margin: 0.25rem 0.5%;
   min-width: 24%;
+}
+@media (max-width: 480px) {
+  .row > .column {
+    margin: 0.25rem 0;
+    min-width: 100%;
+  }
 }
 .row .column-25 {
   flex: 0 0 24%;
   max-width: 24%;
 }
+@media (max-width: 480px) {
+  .row .column-25 {
+    flex-basis: 1;
+    max-width: 100%;
+  }
+}
 .row .column-50 {
   flex: 0 0 49%;
   max-width: 49%;
+}
+@media (max-width: 480px) {
+  .row .column-50 {
+    flex-basis: 1;
+    max-width: 100%;
+  }
 }
 .row .column-75 {
   flex: 0 0 74%;
   max-width: 74%;
 }
+@media (max-width: 480px) {
+  .row .column-75 {
+    flex-basis: 1;
+    max-width: 100%;
+  }
+}
 .row .column-100 {
   flex: 0 0 99%;
   max-width: 99%;
 }
+@media (max-width: 480px) {
+  .row .column-100 {
+    flex-basis: 1;
+    max-width: 100%;
+  }
+}
 .row .column-offset-25 {
   margin-left: 24%;
+}
+@media (max-width: 480px) {
+  .row .column-offset-25 {
+    margin-left: 0;
+  }
 }
 .row .column-offset-50 {
   margin-left: 49%;
 }
+@media (max-width: 480px) {
+  .row .column-offset-50 {
+    margin-left: 0;
+  }
+}
 .row .column-offset-75 {
   margin-left: 74%;
 }
+@media (max-width: 480px) {
+  .row .column-offset-75 {
+    margin-left: 0;
+  }
+}
 .row .column-offset-100 {
   margin-left: 99%;
+}
+@media (max-width: 480px) {
+  .row .column-offset-100 {
+    margin-left: 0;
+  }
 }
 
 /*******************************************************************************
@@ -350,25 +413,55 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 2.5rem;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.625rem;
+  }
+}
 
 h2 {
   font-size: 2.25rem;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.375rem;
+  }
+}
 
 h4 {
   font-size: 1.75rem;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 1.25rem;
+  }
 }
 
 h5 {
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  h5 {
+    font-size: 1.125rem;
+  }
+}
 
 h6 {
   font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  h6 {
+    font-size: 1rem;
+  }
 }
 
 b, strong {

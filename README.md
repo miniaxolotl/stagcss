@@ -9,6 +9,7 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/songmawa/stag?style=flat-square)
 ![npm](https://img.shields.io/npm/v/stagcss?style=flat-square)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/songmawa/stag?include_prereleases)
 [![GitHub issues](https://img.shields.io/github/issues/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/issues)
 [![GitHub license](https://img.shields.io/github/license/songmawa/stag?style=flat-square)](https://github.com/songmawa/stag/blob/master/LICENSE)
 
@@ -41,9 +42,28 @@ ___
 
 ### Theming
 
-#### 1. TODO
+#### 1. Copy `stag.scss` and rename it.
 ```sh
-# TODO
+cp src/stag.scss src/stag-{theme}.scss
+```
+
+#### 2. Edit the color variables at the top of the page.
+```scss
+$color-primary:		config.$color-black !default;
+$color-secondary: 	config.$color-grey-light !default;
+$color-tertiary: 	config.$color-white !default;
+$color-background: 	config.$color-white !default;
+$color-accent-1: 	config.$color-gold-dark !default;
+$color-accent-2: 	config.$color-magenta !default;
+```
+
+#### 3. Run `yarn build` to build the source.
+```sh
+yarn build
+# or
+yarn build --theme {theme}
+# or
+yarn build --theme {theme} --minify
 ```
 
 ### Building
