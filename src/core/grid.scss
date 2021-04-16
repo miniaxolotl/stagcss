@@ -16,41 +16,63 @@ $color-accent-2: 		config.$color-magenta			!default;
 	margin: 0 auto;
 
 	width: 40%;
+
+	@media (max-width: config.$media-md) {
+		width: 80%;
+	}
+
+	@media (max-width: config.$media-sm) {
+		width: 90%;
+	}
 }
 
 .section, section {
 	flex-direction: column;
-	margin: 0 auto;
-	padding: 0 0 config.$padding-lg;
+	margin: 0 0 config.$margin-lg;
+	padding: 0;
 
 	width: 100%;
 }
 
 .row {
 	display: flex;
-	margin: 0 0 config.$margin-base;
+	margin: 0;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	width: 100%;
-
+	
 	&>.column {
 		flex-grow: 1;
 		flex-basis: 0;
 
-		margin: 0 0.5%;
+		margin: config.$margin-sm 0.5%;
 		min-width: 24%;
+
+		@media (max-width: config.$media-sm) {
+			margin: config.$margin-sm 0;
+			min-width: 100%;
+		}
 	}
 
 	@for $i from 1 through 4 {
 		.column-#{$i*25} {
 			flex: 0 0 #{($i*25%)-1%};
 			max-width: #{($i*25%)-1%};
+
+			@media (max-width: config.$media-sm) {
+				flex-basis: 1;
+				max-width: 100%;
+			}
 		}
 	}
 
 	@for $i from 1 through 4 {
 		.column-offset-#{$i*25} {
 			margin-left: #{($i*25%)-1%};
+
+			@media (max-width: config.$media-sm) {
+				margin-left: 0;
+			}
 		}
 	}
 }

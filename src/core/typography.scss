@@ -16,26 +16,50 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	font-size: config.$font-1;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-1;
+	}
 }
 
 h2 {
 	font-size: config.$font-2;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-2;
+	}
 }
 
 h3 {
 	font-size: config.$font-3;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-3;
+	}
 }
 
 h4 {
 	font-size: config.$font-4;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-4;
+	}
 }
 
 h5 {
 	font-size: config.$font-5;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-5;
+	}
 }
 
 h6 {
 	font-size: config.$font-6;
+
+	@media (max-width: config.$media-md) {
+		font-size: config.$font-small-6;
+	}
 }
 
 b, strong {

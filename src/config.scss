@@ -1,6 +1,12 @@
 $font-base: 16px;
 
 /*******************************************************************************
+ * media breakpoints
+ *******************************************************************************/
+$media-md: 768px;
+$media-sm: 480px;
+
+/*******************************************************************************
  * fonts
  *******************************************************************************/
 //  @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap');
@@ -18,10 +24,10 @@ $font-6: 1.25rem;
 
 $font-small-1: 1.625rem;
 $font-small-2: 1.500rem;
-$font-small-3: 1.500rem;
-$font-small-4: 1.375rem;
-$font-small-5: 1.250rem;
-$font-small-6: 1.125rem;
+$font-small-3: 1.375rem;
+$font-small-4: 1.250rem;
+$font-small-5: 1.125rem;
+$font-small-6: 1.000rem;
 
 $font-small: 0.75rem;
 
