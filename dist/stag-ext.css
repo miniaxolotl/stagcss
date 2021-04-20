@@ -1,0 +1,151 @@
+/**
+ * stagcss v0.4.0
+ * https://stagcss.dev
+ * https://github.com/songmawa/stagcss
+ *
+ * Copyright 2021 Elias Mawa <elias@emawa.io>
+ * Licensed under the GPL-3.0 license
+ */
+/*******************************************************************************
+ * media breakpoints
+ *******************************************************************************/
+/*******************************************************************************
+ * fonts
+ *******************************************************************************/
+/*******************************************************************************
+ * typography
+ *******************************************************************************/
+/*******************************************************************************
+ * color
+ *******************************************************************************/
+/*******************************************************************************
+ * border
+ *******************************************************************************/
+/*******************************************************************************
+ * spacing
+ *******************************************************************************/
+/*******************************************************************************
+ * transitions
+ *******************************************************************************/
+/*******************************************************************************
+ * badge
+ *******************************************************************************/
+.badge {
+  display: inline-block;
+  margin: 0.125rem;
+  padding: 0.125rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 2px solid #3a3939;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #fafafa;
+  background: #3a3939;
+}
+.badge.badge-green {
+  color: #fafafa;
+  background: #38cd38;
+  border-color: #38cd38;
+}
+.badge.badge-blue {
+  color: #fafafa;
+  background: #66cccc;
+  border-color: #66cccc;
+}
+.badge.badge-red {
+  color: #fafafa;
+  background: #cc3366;
+  border-color: #cc3366;
+}
+.badge.badge-outline {
+  border: 2px solid #3a3939;
+  color: #3a3939;
+  background: #fafafa;
+}
+.badge.badge-outline.badge-green {
+  color: #38cd38;
+  border-color: #38cd38;
+}
+.badge.badge-outline.badge-blue {
+  color: #66cccc;
+  border-color: #66cccc;
+}
+.badge.badge-outline.badge-red {
+  color: #cc3366;
+  border-color: #cc3366;
+}
+
+/*******************************************************************************
+ * footer
+ *******************************************************************************/
+.footer, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 2rem;
+}
+.footer > .footer-icon, footer > .footer-icon {
+  height: 2rem;
+}
+.footer.footer-fixed, footer.footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-margin {
+  margin-bottom: 2rem;
+}
+
+/*******************************************************************************
+ * navigation
+ *******************************************************************************/
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  white-space: nowrap;
+  width: 100%;
+  min-height: 3rem;
+}
+.nav-container > .nav-title {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+.nav-container > .nav-title > .nav-icon {
+  height: 2rem;
+  width: auto;
+}
+.nav-container > .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+}
+.nav-container > .nav-item > .nav-icon {
+  height: 2rem;
+  width: auto;
+}
+.nav-container > .nav-icon {
+  display: flex;
+  align-self: center;
+  margin: 0.25rem 1rem;
+  height: 2rem;
+  width: auto;
+}
+.nav-container.nav-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.nav-margin {
+  margin-top: 2rem;
+}
+
+/*******************************************************************************
+ * ext
+ *******************************************************************************/
