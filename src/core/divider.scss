@@ -10,6 +10,7 @@ $color-accent-2: 		config.$color-magenta			!default;
 /*******************************************************************************
  * divider
  *******************************************************************************/
+
 hr {
 	border: config.$border-sm solid $color-primary;
 	margin: config.$margin-base auto;
