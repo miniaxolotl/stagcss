@@ -1,0 +1,38 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * footer
+ *******************************************************************************/
+
+.footer, footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 100%;
+	min-height: 2rem;
+
+	>.footer-icon {
+		height: 2rem;
+	}
+
+	&.footer-fixed {
+		position: fixed;
+
+		left: 0;
+		bottom: 0;
+
+		width: 100%;
+	}
+}
+
+.footer-margin {
+	margin-bottom: 2rem;
+}

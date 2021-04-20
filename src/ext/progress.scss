@@ -1,0 +1,12 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * progress
+ *******************************************************************************/
