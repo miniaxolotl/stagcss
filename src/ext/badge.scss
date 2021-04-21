@@ -1,0 +1,69 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * badge
+ *******************************************************************************/
+
+.badge {
+	display: inline-block;
+	margin: config.$margin-xsm;
+	padding: config.$padding-xsm;
+
+	white-space: nowrap;
+	overflow: hidden;
+
+	border: config.$border-base solid $color-primary;
+	border-radius: config.$border-round;
+
+	font-weight: 700;
+	font-size: config.$font-small;
+	color: config.$color-white;
+	background: $color-primary;
+
+	&.badge-green {
+		color: config.$color-white;
+		background: config.$color-green;
+		border-color: config.$color-green;
+	}
+
+	&.badge-blue {
+		color: config.$color-white;
+		background: config.$color-blue;
+		border-color: config.$color-blue;
+	}
+
+	&.badge-red {
+		color: config.$color-white;
+		background: config.$color-red;
+		border-color: config.$color-red;
+	}
+
+	&.badge-outline {
+		border: config.$border-base solid $color-primary;
+
+		color: $color-primary;
+		background: $color-background;
+
+		&.badge-green {
+			color: config.$color-green;
+			border-color: config.$color-green;
+		}
+		
+		&.badge-blue {
+			color: config.$color-blue;
+			border-color: config.$color-blue;
+		}
+		
+		&.badge-red {
+			color: config.$color-red;
+			border-color: config.$color-red;
+		}
+	}
+}

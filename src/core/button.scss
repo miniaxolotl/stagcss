@@ -10,6 +10,7 @@ $color-accent-2: 		config.$color-magenta			!default;
 /*******************************************************************************
  * button
  *******************************************************************************/
+
 button, .button, input[type='button'], input[type='submit'] {
 	margin: config.$margin-base 0 config.$margin-base;
 	padding: config.$padding-base config.$padding-lg;

@@ -8,29 +8,31 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * list
+ * footer
  *******************************************************************************/
 
-dl, ol, ul {
-	margin: 0;
-	padding: 0;
-}
+.footer, footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 100%;
+	min-height: 2rem;
 
-dl {
-	&>dt {
-		font-weight: 600;
+	>.footer-icon {
+		height: 2rem;
 	}
 
-	&>dd {
-		margin: o config.$margin-base 0 0;
+	&.footer-fixed {
+		position: fixed;
+
+		left: 0;
+		bottom: 0;
+
+		width: 100%;
 	}
 }
 
-ol {
-	list-style: decimal inside;
-}
-
-ul {
-
-	list-style: circle inside;
+.footer-margin {
+	margin-bottom: 2rem;
 }

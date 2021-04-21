@@ -8,29 +8,5 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * list
+ * progress
  *******************************************************************************/
-
-dl, ol, ul {
-	margin: 0;
-	padding: 0;
-}
-
-dl {
-	&>dt {
-		font-weight: 600;
-	}
-
-	&>dd {
-		margin: o config.$margin-base 0 0;
-	}
-}
-
-ol {
-	list-style: decimal inside;
-}
-
-ul {
-
-	list-style: circle inside;
-}

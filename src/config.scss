@@ -29,6 +29,7 @@ $font-small-4: 1.250rem;
 $font-small-5: 1.125rem;
 $font-small-6: 1.000rem;
 
+$font-xsmall: 0.50rem;
 $font-small: 0.75rem;
 
 /*******************************************************************************
@@ -49,6 +50,12 @@ $color-magenta: 		#ff00ff;
 $color-magenta-light: 	#ff99ff;
 $color-magenta-dark: 	#a100a1;
 
+$color-green: 			#38cd38;
+
+$color-blue: 			#66cccc;
+
+$color-red: 			#cc3366;
+
 $color-transparent: 	#0000;
 
 /*******************************************************************************
@@ -56,6 +63,8 @@ $color-transparent: 	#0000;
  *******************************************************************************/
 $border-sharp: 0px;
 $border-round: 4px;
+
+$border-base: 2px;
 $border-sm: 1px;
 $border-lg: 4px;
 
@@ -70,10 +79,12 @@ $border-lg: 4px;
  * spacing
  *******************************************************************************/
 $margin-base: 1rem;
+$margin-xsm: 0.125rem;
 $margin-sm: 0.25rem;
 $margin-lg: 1rem;
 
 $padding-base: 0.5rem;
+$padding-xsm: 0.125rem;
 $padding-sm: 0.25rem;
 $padding-lg: 1rem;
 
