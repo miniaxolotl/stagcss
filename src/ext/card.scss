@@ -1,0 +1,34 @@
+@use '../config.scss';
+
+$color-primary: 		config.$color-black				!default;
+$color-secondary: 		config.$color-grey				!default;
+$color-tertiary: 		config.$color-white				!default;
+$color-background: 		config.$color-transparent		!default;
+$color-accent-1: 		config.$color-gold-dark			!default;
+$color-accent-2: 		config.$color-magenta			!default;
+
+/*******************************************************************************
+ * card
+ *******************************************************************************/
+
+.card {
+	position: relative;
+	box-shadow: config.$shadow;
+	border-radius: config.$border-round;
+	overflow: hidden;
+
+	.card-content {
+		max-width: 100%;
+
+		padding: config.$padding-base config.$padding-lg;
+		border-radius: config.$border-round;
+	}
+
+	&>.card-image {
+		border-radius: 0;
+	}
+
+	&>.card-content:last-child {
+		border-radius: 0;
+	}
+}
