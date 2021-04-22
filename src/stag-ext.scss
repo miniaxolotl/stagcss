@@ -20,6 +20,15 @@ $color-accent-2: 		config.$color-magenta			!default;
 	$color-accent-2: 	$color-accent-2,
 );
 
+@use 'ext/card.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
 @use 'ext/footer.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
@@ -30,6 +39,15 @@ $color-accent-2: 		config.$color-magenta			!default;
 );
 
 @use 'ext/navigation.scss' with (
+	$color-primary: 	$color-primary,
+	$color-secondary: 	$color-secondary,
+	$color-tertiary: 	$color-tertiary,
+	$color-background: 	$color-background,
+	$color-accent-1: 	$color-accent-1,
+	$color-accent-2: 	$color-accent-2,
+);
+
+@use 'ext/progress.scss' with (
 	$color-primary: 	$color-primary,
 	$color-secondary: 	$color-secondary,
 	$color-tertiary: 	$color-tertiary,

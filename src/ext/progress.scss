@@ -10,3 +10,70 @@ $color-accent-2: 		config.$color-magenta			!default;
 /*******************************************************************************
  * progress
  *******************************************************************************/
+
+progress {
+	overflow: hidden;
+	border: none;
+ 	border-radius: config.$border-circle;
+	background-color: $color-secondary;
+	height: 0.8rem;
+}
+
+progress::-webkit-progress-bar {
+	overflow: hidden;
+	border: none;
+	border-radius: config.$border-circle;
+	background-color: $color-secondary;
+	height: 0.8rem;
+}
+
+progress::-webkit-progress-value {
+	border-radius: config.$border-circle 0 0 config.$border-circle;
+	background-color: $color-primary;
+}
+
+progress::-moz-progress-bar {
+	border-radius: config.$border-circle 0 0 config.$border-circle;
+	background-color: $color-primary;
+	height: 0.8rem;
+}
+
+.progress-success {
+	&::-webkit-progress-value {
+		background-color: config.$color-green;
+	}
+
+	&::-moz-progress-bar {
+		background-color: config.$color-green;
+	}
+}
+
+.progress-info {
+	&::-webkit-progress-value {
+		background-color: config.$color-blue;
+	}
+	
+	&::-moz-progress-bar {
+		background-color: config.$color-blue;
+	}
+}
+
+.progress-warning {
+	&::-webkit-progress-value {
+		background-color: config.$color-orange;
+	}
+	
+	&::-moz-progress-bar {
+		background-color: config.$color-orange;
+	}
+}
+
+.progress-error {
+	&::-webkit-progress-value {
+		background-color: config.$color-red;
+	}
+	
+	&::-moz-progress-bar {
+		background-color: config.$color-red;
+	}
+}

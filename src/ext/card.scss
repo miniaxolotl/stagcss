@@ -8,41 +8,27 @@ $color-accent-1: 		config.$color-gold-dark			!default;
 $color-accent-2: 		config.$color-magenta			!default;
 
 /*******************************************************************************
- * image
+ * card
  *******************************************************************************/
 
-img {
-	width: 100%;
-	border-radius: config.$border-round;
-}
-
-figure {
-	margin: 0;
-
+.card {
 	position: relative;
+	box-shadow: config.$shadow;
 	border-radius: config.$border-round;
 	overflow: hidden;
-	
-	&>figcaption {
-		position: absolute;
-		display: flex;
-		flex-direction: column-reverse;
+
+	.card-content {
+		max-width: 100%;
+
 		padding: config.$padding-base config.$padding-lg;
-		bottom: 0;
-
-		width: 100%;
-		height: 20%;
-
-		color: $color-secondary;
-
-		background: $color-tertiary;
-		background: linear-gradient( #0000 0%, $color-primary 100%); 
+		border-radius: config.$border-round;
 	}
 
-	&>img {
-		display: flex;
+	&>.card-image {
 		border-radius: 0;
-		height: 100%;
-		width: 100%;
+	}
+
+	&>.card-content:last-child {
+		border-radius: 0;
 	}
 }
