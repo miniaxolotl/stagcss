@@ -12,5 +12,37 @@ $color-accent-2: 		config.$color-magenta			!default;
  *******************************************************************************/
 
 img {
-	max-width: 100%;
+	width: 100%;
+	border-radius: config.$border-round;
+}
+
+figure {
+	margin: 0;
+
+	position: relative;
+	border-radius: config.$border-round;
+	overflow: hidden;
+	
+	&>figcaption {
+		position: absolute;
+		display: flex;
+		flex-direction: column-reverse;
+		padding: config.$padding-base config.$padding-lg;
+		bottom: 0;
+
+		width: 100%;
+		height: 20%;
+
+		color: $color-secondary;
+
+		background: $color-tertiary;
+		background: linear-gradient( #0000 0%, $color-primary 100%); 
+	}
+
+	&>img {
+		display: flex;
+		border-radius: 0;
+		height: 100%;
+		width: 100%;
+	}
 }
