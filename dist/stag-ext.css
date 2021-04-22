@@ -1,5 +1,5 @@
 /**
- * stagcss v0.4.0
+ * stagcss v0.6.3
  * https://stagcss.dev
  * https://github.com/songmawa/stagcss
  *
@@ -17,6 +17,9 @@
  *******************************************************************************/
 /*******************************************************************************
  * color
+ *******************************************************************************/
+/*******************************************************************************
+ * shadow
  *******************************************************************************/
 /*******************************************************************************
  * border
@@ -74,6 +77,27 @@
 .badge.badge-outline.badge-red {
   color: #cc3366;
   border-color: #cc3366;
+}
+
+/*******************************************************************************
+ * card
+ *******************************************************************************/
+.card {
+  position: relative;
+  box-shadow: 2px 2px 8px #999999, -2px -2px 8px #999999;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card .card-content {
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.card > .card-image {
+  border-radius: 0;
+}
+.card > .card-content:last-child {
+  border-radius: 0;
 }
 
 /*******************************************************************************
@@ -144,6 +168,64 @@
 
 .nav-margin {
   margin-top: 2rem;
+}
+
+/*******************************************************************************
+ * progress
+ *******************************************************************************/
+progress {
+  overflow: hidden;
+  border: none;
+  border-radius: 512px;
+  background-color: #e4e0e0;
+  height: 0.8rem;
+}
+
+progress::-webkit-progress-bar {
+  overflow: hidden;
+  border: none;
+  border-radius: 512px;
+  background-color: #e4e0e0;
+  height: 0.8rem;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 512px 0 0 512px;
+  background-color: #3a3939;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 512px 0 0 512px;
+  background-color: #3a3939;
+  height: 0.8rem;
+}
+
+.progress-success::-webkit-progress-value {
+  background-color: #38cd38;
+}
+.progress-success::-moz-progress-bar {
+  background-color: #38cd38;
+}
+
+.progress-info::-webkit-progress-value {
+  background-color: #66cccc;
+}
+.progress-info::-moz-progress-bar {
+  background-color: #66cccc;
+}
+
+.progress-warning::-webkit-progress-value {
+  background-color: #ffcc33;
+}
+.progress-warning::-moz-progress-bar {
+  background-color: #ffcc33;
+}
+
+.progress-error::-webkit-progress-value {
+  background-color: #cc3366;
+}
+.progress-error::-moz-progress-bar {
+  background-color: #cc3366;
 }
 
 /*******************************************************************************
