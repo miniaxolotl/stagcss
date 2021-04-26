@@ -14,15 +14,16 @@ $color-accent-2: 		config.$color-magenta			!default;
 .box {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	border-radius: config.$border-round;
+	// justify-content: center;
+	// align-items: center;
 
-	margin: config.$margin-base;
+	// margin: config.$margin-base;
 
 	&>* {
 		display: inline-flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
+		// justify-content: center;
+		// align-items: center;
 	}
 }
