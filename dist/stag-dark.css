@@ -1,5 +1,5 @@
 /**
- * stagcss v0.6.3
+ * stagcss v0.7.1
  * https://stagcss.dev
  * https://github.com/songmawa/stagcss
  *
@@ -65,15 +65,11 @@ blockquote *:last-child {
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
+  border-radius: 4px;
 }
 .box > * {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 /*******************************************************************************
