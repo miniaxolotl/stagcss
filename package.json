@@ -6,7 +6,7 @@
 	"files": [
 		"dist/*.css"
 	],
-	"repository": "git@github.com:songmawa/stag.git",
+	"repository": "git@github.com:ottxrgxist/stag.git",
 	"author": "Elias Mawa <elias@emawa.io>",
 	"license": "GPL-3.0",
 	"scripts": {
