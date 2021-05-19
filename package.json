@@ -1,6 +1,6 @@
 {
 	"name": "stagcss",
-	"version": "0.7.1",
+	"version": "0.7.2",
 	"description": "minimalist & modern css framework",
 	"main": "dist/stag.min.css",
 	"files": [
