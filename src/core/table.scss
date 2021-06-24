@@ -12,23 +12,16 @@ $color-accent-2: 		config.$color-magenta			!default;
  *******************************************************************************/
 
 table {
+	border-collapse: collapse;
 	border-spacing: 0;
-	text-align: left;
+	display: block;
+	width: 100%;
 	overflow-x: auto;
 }
 
-table, tr, thead, tbody {
-	display: block;
-	width: 100%;
-}
-
 tr {
-	display: flex;
-	flex-wrap: nowrap;
-
 	&>th, &>td {
-		display: flex;
-		flex: 1 0 0;
+		text-align: left;
 		padding: config.$padding-base config.$padding-lg;
 		border-bottom: config.$border-sm solid $color-primary;
 
