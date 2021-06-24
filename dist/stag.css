@@ -1,5 +1,5 @@
 /**
- * stagcss v0.7.2
+ * stagcss v0.7.3
  * https://stagcss.dev
  * https://github.com/songmawa/stagcss
  *
@@ -262,6 +262,7 @@ label, legend {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
+  margin: 0.25rem 0.5%;
 }
 .row > .column {
   flex-grow: 1;
@@ -316,7 +317,7 @@ label, legend {
   }
 }
 .row .column-offset-25 {
-  margin-left: 24%;
+  margin-left: 25.5% !important;
 }
 @media (max-width: 480px) {
   .row .column-offset-25 {
@@ -324,7 +325,7 @@ label, legend {
   }
 }
 .row .column-offset-50 {
-  margin-left: 49%;
+  margin-left: 50.5% !important;
 }
 @media (max-width: 480px) {
   .row .column-offset-50 {
@@ -332,7 +333,7 @@ label, legend {
   }
 }
 .row .column-offset-75 {
-  margin-left: 74%;
+  margin-left: 75.5% !important;
 }
 @media (max-width: 480px) {
   .row .column-offset-75 {
@@ -340,7 +341,7 @@ label, legend {
   }
 }
 .row .column-offset-100 {
-  margin-left: 99%;
+  margin-left: 100.5% !important;
 }
 @media (max-width: 480px) {
   .row .column-offset-100 {
@@ -419,23 +420,15 @@ ul {
  * table
  *******************************************************************************/
 table {
+  border-collapse: collapse;
   border-spacing: 0;
-  text-align: left;
+  display: block;
+  width: 100%;
   overflow-x: auto;
 }
 
-table, tr, thead, tbody {
-  display: block;
-  width: 100%;
-}
-
-tr {
-  display: flex;
-  flex-wrap: nowrap;
-}
 tr > th, tr > td {
-  display: flex;
-  flex: 1 0 0;
+  text-align: left;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #3a3939;
   word-wrap: break-word;
