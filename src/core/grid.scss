@@ -42,12 +42,16 @@ $color-accent-2: 		config.$color-magenta			!default;
 	justify-content: space-between;
 	width: 100%;
 	
+	margin: config.$margin-sm 0.5%;
+	
 	&>.column {
 		flex-grow: 1;
 		flex-basis: 0;
 
 		margin: config.$margin-sm 0.5%;
 		min-width: 24%;
+
+		background-color: green;
 
 		@media (max-width: config.$media-sm) {
 			margin: config.$margin-sm 0;
@@ -69,7 +73,7 @@ $color-accent-2: 		config.$color-magenta			!default;
 
 	@for $i from 1 through 4 {
 		.column-offset-#{$i*25} {
-			margin-left: #{($i*25%)-1%};
+			margin-left: #{($i*25%)+0.5%} !important;
 
 			@media (max-width: config.$media-sm) {
 				margin-left: 0;
