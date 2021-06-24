@@ -51,8 +51,6 @@ $color-accent-2: 		config.$color-magenta			!default;
 		margin: config.$margin-sm 0.5%;
 		min-width: 24%;
 
-		background-color: green;
-
 		@media (max-width: config.$media-sm) {
 			margin: config.$margin-sm 0;
 			min-width: 100%;
