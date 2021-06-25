@@ -1,5 +1,5 @@
 /**
- * stagcss v0.7.3
+ * stagcss v0.7.5
  * https://stagcss.dev
  * https://github.com/songmawa/stagcss
  *
@@ -321,7 +321,7 @@ label, legend {
 }
 @media (max-width: 480px) {
   .row .column-offset-25 {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 .row .column-offset-50 {
@@ -329,7 +329,7 @@ label, legend {
 }
 @media (max-width: 480px) {
   .row .column-offset-50 {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 .row .column-offset-75 {
@@ -337,7 +337,7 @@ label, legend {
 }
 @media (max-width: 480px) {
   .row .column-offset-75 {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 .row .column-offset-100 {
@@ -345,7 +345,7 @@ label, legend {
 }
 @media (max-width: 480px) {
   .row .column-offset-100 {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 
