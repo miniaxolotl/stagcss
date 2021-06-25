@@ -74,7 +74,7 @@ $color-accent-2: 		config.$color-magenta			!default;
 			margin-left: #{($i*25%)+0.5%} !important;
 
 			@media (max-width: config.$media-sm) {
-				margin-left: 0;
+				margin-left: 0 !important;
 			}
 		}
 	}
