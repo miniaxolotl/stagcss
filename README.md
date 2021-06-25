@@ -9,9 +9,9 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/ottxrgxist/stag?style=flat-square)
 ![npm](https://img.shields.io/npm/v/stagcss?style=flat-square)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/songmawa/stag?include_prereleases)
-[![GitHub issues](https://img.shields.io/github/issues/ottxrgxist/stag?style=flat-square)](https://github.com/songmawa/stag/issues)
-[![GitHub license](https://img.shields.io/github/license/ottxrgxist/stag?style=flat-square)](https://github.com/songmawa/stag/blob/master/LICENSE)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ottxrgxist/stag?include_prereleases)
+[![GitHub issues](https://img.shields.io/github/issues/ottxrgxist/stag?style=flat-square)](https://github.com/ottxrgxist/stag/issues)
+[![GitHub license](https://img.shields.io/github/license/ottxrgxist/stag?style=flat-square)](https://github.com/ottxrgxist/stag/blob/master/LICENSE)
 
 </div>
 
@@ -92,8 +92,8 @@ Specifications & design documents can be found in the [wiki](/wiki).
 
 ## See Also
 
-- **react-stag - https://github.com/songmawa/react-stag**
-- **stag-docs - https://github.com/songmawa/stag-docs**
+- **react-stag - https://github.com/ottxrgxist/react-stag**
+- **stag-docs - https://github.com/ottxrgxist/stag-docs**
 - **react-native-stag - [soon™]()**
 
 ## Contributing
