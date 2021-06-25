@@ -93,6 +93,7 @@ Specifications & design documents can be found in the [wiki](/wiki).
 ## See Also
 
 - **react-stag - https://github.com/songmawa/react-stag**
+- **stag-docs - https://github.com/songmawa/stag-docs**
 - **react-native-stag - [soon™]()**
 
 ## Contributing
