@@ -7,17 +7,17 @@
 
 **a modern and minimalist CSS framework.**
 
-![CircleCI](https://img.shields.io/circleci/build/github/ottxrgxist/stag?style=flat-square)
+![CircleCI](https://img.shields.io/circleci/build/github/theluckyegg/stag?style=flat-square)
 ![npm](https://img.shields.io/npm/v/stagcss?style=flat-square)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ottxrgxist/stag?include_prereleases)
-[![GitHub issues](https://img.shields.io/github/issues/ottxrgxist/stag?style=flat-square)](https://github.com/ottxrgxist/stag/issues)
-[![GitHub license](https://img.shields.io/github/license/ottxrgxist/stag?style=flat-square)](https://github.com/ottxrgxist/stag/blob/master/LICENSE)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/theluckyegg/stag?include_prereleases)
+[![GitHub issues](https://img.shields.io/github/issues/theluckyegg/stag?style=flat-square)](https://github.com/theluckyegg/stag/issues)
+[![GitHub license](https://img.shields.io/github/license/theluckyegg/stag?style=flat-square)](https://github.com/theluckyegg/stag/blob/master/LICENSE)
 
 </div>
 
 ## Getting Started
 
-### Dependancies
+### Dependencies
 
 - [nodejs](https://nodejs.org/) >= 12.18.4
 - [yarn](https://classic.yarnpkg.com/) >= 1.22.10
@@ -25,15 +25,19 @@
 ### Usage
 
 #### CDN
+
 ```html
 <link rel="stylesheet" href="https://unpkg.com/stagcss"/>
 ```
 
 #### npm
+
 ```sh
 npm install --save stagcss
 ```
+
 #### yarn
+
 ```sh
 yarn add stagcss
 ```
@@ -42,22 +46,25 @@ ___
 
 ### Theming
 
-#### 1. Copy `stag.scss` and rename it.
+#### 1. Copy `stag.scss` and rename it
+
 ```sh
 cp src/stag.scss src/stag-{theme}.scss
 ```
 
-#### 2. Edit the color variables at the top of the page.
+#### 2. Edit the color variables at the top of the page
+
 ```scss
-$color-primary:		config.$color-black !default;
-$color-secondary: 	config.$color-grey-light !default;
-$color-tertiary: 	config.$color-white !default;
-$color-background: 	config.$color-white !default;
-$color-accent-1: 	config.$color-gold-dark !default;
-$color-accent-2: 	config.$color-magenta !default;
+$color-primary:     config.$color-black !default;
+$color-secondary:   config.$color-grey-light !default;
+$color-tertiary:    config.$color-white !default;
+$color-background:  config.$color-white !default;
+$color-accent-1:    config.$color-gold-dark !default;
+$color-accent-2:    config.$color-magenta !default;
 ```
 
-#### 3. Run `yarn build` to build the source.
+#### 3. Run `yarn build` to build the source
+
 ```sh
 yarn build
 # or
@@ -71,6 +78,7 @@ yarn build --theme {theme} --minify
 Specify theme by using or ommiting `--theme` (`default` and `dark`). Minify using `--minify`.
 
 #### Using gulp
+
 ```sh
 yarn build
 # or
@@ -80,6 +88,7 @@ gulp build
 ### Testing
 
 #### Using jest
+
 ```sh
 yarn test
 # or
@@ -92,9 +101,9 @@ Specifications & design documents can be found in the [wiki](/wiki).
 
 ## See Also
 
-- **react-stag - https://github.com/ottxrgxist/react-stag**
-- **stag-docs - https://github.com/ottxrgxist/stag-docs**
-- **react-native-stag - [soon™]()**
+- **react-stag - <https://github.com/theluckyegg/react-stag>**
+- **stag-docs - <https://github.com/theluckyegg/stag-docs>**
+- **react-native-stag - [soon™](https://github.com/theluckyegg/stag-docs)**
 
 ## Contributing
 
